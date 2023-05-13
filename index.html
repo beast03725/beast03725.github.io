@@ -7,14 +7,32 @@
             {border: solid 1px black;
             border-collapse: collapse;
             padding: 8px;}
+
+            h3 :link {color: blue; text-decoration: none;}
+            h3 :visited {color: blue; text-decoration: none;}
+            h3 :hover {color: red; text-decoration: none;}
         </style>
+            <script>
+                function subblue() {
+                    e = document.getElementById('test')
+                    e.style.color = 'pink';
+                }
+                function subred() {
+                    e = document.getElementById('test')
+                    e.style.color = 'purple';
+                }
+            </script>
     </head>
     <body>
-        <h3>
-            환영합니다! 20220342 박소현의 홈페이지입니다. 
-        </h3>
+        <h3 id="test">환영합니다! 20220342 박소현의 홈페이지입니다.</h3>
+        <button onclick="subblue();" type="button">핑크색으로 ♥</button>
+        <button onclick="subred();" type="button">보라색으로 ♥</button>
+       
 
         <h3>2023년도 1학기 시간표(박소현)</h3>
+
+        <img onmouseout="this.style.width='100px' "onmouseover="this.style.width='200px' "src="강아쥐야.jpg" width="100px">
+        <br><br>
 
         <table>
             <tr>
