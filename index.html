@@ -1,166 +1,251 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <style>
-            table, tr, th, td
-            {border: solid 1px black;
+<head>
+<meta charset='utf-8'>
+<style>
+	* {padding: 0px; margin: 0px;}
+
+	header, nav, section, aside, footer {
+		border: solid 0px black;}
+
+	table, tr, th, td
+            {border: solid 2px blue;
             border-collapse: collapse;
-            padding: 8px;}
+            padding: 5px;
+			margin: 0px 20px 0px 20px;
+	        background-color: beige;}
 
-            h3 :link {color: blue; text-decoration: none;}
-            h3 :visited {color: blue; text-decoration: none;}
-            h3 :hover {color: red; text-decoration: none;}
-        </style>
-            <script>
-                function subblue() {
-                    e = document.getElementById('test')
-                    e.style.color = 'pink';
-                }
-                function subred() {
-                    e = document.getElementById('test')
-                    e.style.color = 'purple';
-                }
-            </script>
-    </head>
-    <body>
-        <h3 id="test">환영합니다! 20220342 박소현의 홈페이지입니다.</h3>
-        <button onclick="subblue();" type="button">핑크색으로 ♥</button>
+	body{background-color: skyblue;}
+
+	header {width: 995px; height: 100px;
+		margin-top: 10px;}
+
+ 	nav {width: 995px; height: 70px;
+		margin-top: 30px;
+	text-align: center;}
+
+    nav :link {color: blue; text-decoration: none;}
+    nav :visited {color: blue; text-decoration: none;}
+    nav :hover {color: red; text-decoration: none;}
+
+	section {
+		width: 674px; height: 240px;
+		margin-top: 10px;
+		float: left;
+		margin-right: 29px;
+	}
+
+	aside {
+		width: 290px; height: 240px;
+		margin-top: 10px;
+		float: left;
+	}
+
+	footer {
+		width: 995px; height: 130px;
+		margin-top: 10px;
+	}
+
+	.clear {clear: both;}
+
+	#logo {text-align: center;
+		color: blue;
+		font-size: xx-large;
+		font-weight: bold;
+	    margin-top: 5px;}
+
+
+		li {float: left;
+	list-style-type: none;}
+
+	#address {float: left;
+	margin-top: 30px;
+    margin-left: 50px;}
+
+	#customer {float: left;
+	margin: 0px 20px 0px 100px;}
+
+</style>
+<script>
+	function subblue() {
+		e = document.getElementById('test')
+		e.style.color = 'red';
+	}
+	function subred() {
+		e = document.getElementById('test')
+		e.style.color = 'purple';
+	}
+</script>
+</head>
+<body>
+<header>
+	<div id='logo'>
+		<img onmouseout="this.style.width='70px' "onmouseover="this.style.width='100px' "src="루피짤.gif" width="70px"> 환영합니다 ♥ 박소현의 홈페이지입니다  <img onmouseout="this.style.width='70px' "onmouseover="this.style.width='100px' "src="루피짤.gif" width="70px">
+     </div>
+</header>
+<nav>
+	<a href="회원가입.html"> 회원가입 ㅣ </a>
+	<a href="루바토 펜션.html"> 루바토 펜션 안내 ㅣ </a>
+	<a href="행사안내.html"> 호서대 국제 기타 페스티벌 ㅣ </a>
+	<a href="주말 야간 개장.html"> 호서 야간 개장 ㅣ </a>
+	<a href="세일 안내장.html"> 세일 안내장 ㅣ </a>
+	<a href="월간 일정표.html"> 월간 일정표 ㅣ </a>
+	<a href="판매 향수 목록.html"> 판매 향수 목록 </a>
+</nav>
+<section>
+	<table>
+		<tr>
+			<th>시간</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th>
+		</tr>
+	
+		<tr>
+			<th>9:30~10:30</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	
+		<tr>
+			<th>10:30~11:30</th>
+			<th></th>
+			<th></th>
+			<th rowspan="2">천안의이해</th>
+			<th>디지털콘텐츠 <br> 비즈니스개론</th>
+			<th rowspan="2">웹프로그래밍</th>
+		</tr>
+	
+		<tr>
+			<th>11:30~12:30</th>
+			<th></th>
+			<th rowspan="2">디지털콘텐츠 <br> 비즈니스개론</th>
+			<th rowspan="2">대학영어회화2</th>
+		</tr>
+	
+		<tr>
+			<th>12:30~1:30</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	
+		<tr>
+			<th>1:30~2:30</th>
+			<th></th>
+			<th rowspan="2">경영정보시스템</th>
+			<th>경영정보시스템</th>
+			<th></th>
+			<th></th>
+		</tr>
+	
+		<tr>
+			<th>2:30~3:30</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+		
+		<tr>
+			<th>3:30~4:30</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	
+		<tr>
+			<th>4:30~5:30</th>
+			<th></th>
+			<th rowspan="2">예비부모교육</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	
+		<tr>
+			<th>5:30~6:30</th>
+			<th></th>
+			<th rowspan="2">지능과창의성개발</th>
+			<th></th>
+			<th></th>
+		</tr>
+	
+		<tr>
+			<th>6:30~7:30</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	
+		<tr>
+			<th>7:30~8:30</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	
+		<tr>
+			<th>8:30~9:30</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th>웹프로그래밍</th>
+		</tr>
+	</table>
+</section>
+<aside>
+	<div class="address">
+		<a href="https://www.youtube.com/watch?v=xmq_OXR-NCQ"><img onmouseout="this.style.width='100px' "onmouseover="this.style.width='200px' "src="루피 와앙.jpg" width="100px"></a> <br>
+		<br>
+		<h3 id="test">오늘의 먹방 😎</h3>
+		<br>
+		<button onclick="subblue();" type="button">빨간색으로 ♥</button>
         <button onclick="subred();" type="button">보라색으로 ♥</button>
-       
+    </div> <br>
 
-        <h3>2023년도 1학기 시간표(박소현)</h3>
+	<div class="address">
+		<a href="https://www.youtube.com/watch?v=XK4030cO0ko"><img onmouseout="this.style.width='100px' "onmouseover="this.style.width='200px' "src="루피 노래.jfif" width="100px"></a> <br>
+		<br>
+		<h3 id="test">오늘의 음악 🎶</h3>
+		<br>
+		<button onclick="subblue();" type="button">빨간색으로 ♥</button>
+        <button onclick="subred();" type="button">보라색으로 ♥</button>	
+    </div> <br>
 
-        <img onmouseout="this.style.width='100px' "onmouseover="this.style.width='200px' "src="강아쥐야.jpg" width="100px">
-        <br><br>
+	
+	<div class="address">
+		<a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%B2%9C%EC%95%88+%EB%82%A0%EC%94%A8"><img onmouseout="this.style.width='100px' "onmouseover="this.style.width='200px' "src="루피 날씨.jpg" width="100px"></a> <br>
+		<br>
+		<h3 id="test">오늘의 천안 날씨 😊</h3>
+		<br>
+		<button onclick="subblue();" type="button">빨간색으로 ♥</button>
+        <button onclick="subred();" type="button">보라색으로 ♥</button>	
+    </div>
+  </aside>
+<div class='clear'></div>
+<footer>
+	<br>
+	<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-        <table>
-            <tr>
-                <th>시간</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th>
-            </tr>
-        
-            <tr>
-                <th>9:30~10:30</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        
-            <tr>
-                <th>10:30~11:30</th>
-                <th></th>
-                <th></th>
-                <th rowspan="2">천안의이해</th>
-                <th>디지털콘텐츠 <br> 비즈니스개론</th>
-                <th rowspan="2">웹프로그래밍</th>
-            </tr>
-        
-            <tr>
-                <th>11:30~12:30</th>
-                <th></th>
-                <th rowspan="2">디지털콘텐츠 <br> 비즈니스개론</th>
-                <th rowspan="2">대학영어회화2</th>
-            </tr>
-        
-            <tr>
-                <th>12:30~1:30</th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        
-            <tr>
-                <th>1:30~2:30</th>
-                <th></th>
-                <th rowspan="2">경영정보시스템</th>
-                <th>경영정보시스템</th>
-                <th></th>
-                <th></th>
-            </tr>
-        
-            <tr>
-                <th>2:30~3:30</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            
-            <tr>
-                <th>3:30~4:30</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        
-            <tr>
-                <th>4:30~5:30</th>
-                <th></th>
-                <th rowspan="2">예비부모교육</th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        
-            <tr>
-                <th>5:30~6:30</th>
-                <th></th>
-                <th rowspan="2">지능과창의성개발</th>
-                <th></th>
-                <th></th>
-            </tr>
-        
-            <tr>
-                <th>6:30~7:30</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        
-            <tr>
-                <th>7:30~8:30</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        
-            <tr>
-                <th>8:30~9:30</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th>웹프로그래밍</th>
-            </tr>
-        </table>
-        <h3>
-            <a href="회원가입.html" target="_blank">회원가입</a>
-        </h3>
-        <h3>
-            <a href="루바토 펜션.html" target="_blank">루바토 펜션 안내</a>
-        </h3>
-       <h3>
-        <a href="행사안내.html" target="_blank">호서대 국제 기타 페스티벌</a>
-       </h3>
-       <h3>
-        <a href="주말 야간 개장.html" target="_blank">호서 야간 개장</a>
-       </h3>
-       <h3>
-        <a href="세일 안내장.html" target="_blank">세일 안내장</a>
-       </h3>
-       <h3>
-        <a href="월간 일정표.html" target="_blank">월간 일정표</a>
-       </h3>
-       <h3>
-        <a href="판매 향수 목록.html" target="_blank">판매 향수 목록</a>
-       </h3>
-     
-    </body>
+
+	<div id="customer">
+		<img src="개인정보.jpg" width="100" height="100"> 
+		나의 정보 🙊 : 
+		<select>
+			<option>보기</option>
+			<option>네이버 : sohyun072503.naver.com</option>
+			<option>인스타그램 : ssohyun</option>
+			<option>깃허브 : https://beast03725.github.io/ </option>
+		</select>
+	</div>
+
+</footer>
+</body>
 </html>
