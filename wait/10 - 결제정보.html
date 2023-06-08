@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+/*  기본틀 만들기 */
+
+body {background-color: lavender;}
+
+* {padding: 0px; margin:0px;}
+
+header {
+      /* background-color: red; */
+height: 100px;
+width: 1140px;
+margin: 0 auto;}
+
+#main_img {
+       /* background-color: blue; */
+width: 100%;
+height: 250px;
+margin-left: 100px;
+margin-right: 200px;}
+
+#contents {background-color: green;
+width: 1140px;
+margin: 0 auto;
+margin-left: 300px;}
+
+#sub_menu {
+      /* background-color: pink; */
+width: 234px;
+float: left;}
+
+#main_contents{
+      /* background-color: orange; */
+width: 880px;
+float: right;}
+
+footer {background-color: #2c2a29;
+width: 100%;
+height: 150px;}
+
+.clear {clear: both;}
+
+/* header stylesheet */
+#logo {float: left;
+margin: 20px 0px 0px 20px;}
+
+#menus {float: right;}
+
+#main_menu li {
+      display: inline;
+      list-style-type: none;
+      margin-left: 80px;
+}
+
+#main_menu {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-right: 300px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#top_menu {
+      margin-top: 20px;
+      text-align: right;
+}
+
+
+
+/* main_img stylesheet */
+#main_img {
+      background-image: url(식당2.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+}
+
+/* contents stylesheet */
+#sub_menu {margin-top: 25px;}
+#sub_menu h3 {
+      font-size: 18px;
+      color: blue;
+      background-color: white;
+      padding: 10px;}
+
+#sub_menu li {
+      list-style-type: none;
+      border-bottom: solid 2px rebeccapurple;
+      padding: 10px;}
+
+#main_contents {margin-top: 25px;}
+
+#main_contents h3 {
+      font-size: 30px;
+      border-bottom: solid 2px black;
+      padding-bottom: 8px;}
+
+#main_contents p {
+            margin-top: 30px;
+            line-height: 180%;}
+
+#main_contents #figure {
+                  float: left;
+                  margin: 5px;
+                   }
+
+#main_contents #dog {
+                  float: left;
+                  clear: both;
+            margin: 10px;
+                   }
+
+#main_contents li {list-style-type: none;
+                        padding: 5px;}
+
+
+/* footer stylesheet */
+
+#footer_logo {
+    float: left;
+      margin-top: 30px;
+      margin-left: 30px;
+}
+
+#footer_box {
+      margin: 0 auto;
+      width: 1300px;
+}
+
+#address {
+      float: right;
+      margin: 50px 30px 0px 0px;
+      color: white;
+}
+
+#address li {
+      list-style-type: none;
+}
+
+#red {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    font-family: '함초롬바탕';
+}
+
+#pink {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: '굴림';
+
+}
+
+#center {
+      float: center;
+      font-size: 30px;
+}
+
+#one {
+      float: right;
+}
+ 
+</style>
+</head>
+
+<body>
+
+<header>
+      <div id="logo">
+            <img src="웨이팅 미닛 로고.png" width="120" height="120">
+      </div>
+      <br>
+      <br>
+
+      <nav id="menus">
+            <div id="top_menu">
+                  로그인 ㅣ 회원가입 ㅣ 공지사항
+            </div>
+            <ul id="main_menu">
+                  <a href="8 - 단국대 대표 식당 소개.html">
+                        <li>단국대</li>
+                  </a>
+
+                  <a href="8 - 호서대 대표 식당 소개.html">
+                        <li>호서대</li>
+                  </a>
+
+                  <a href="8 - 상명대 대표 식당 소개.html">
+                        <li>상명대</li>
+                  </a>
+
+                  <a href="8 - 백석대 대표 식당 소개.html">
+                        <li>백석대</li>
+                  </a>
+            </ul>
+      </nav>
+
+</header>
+
+<br>
+<br>
+<br>
+<br>
+
+<section id='main_img'>
+</section>
+
+<section id='contents'>
+     <nav id='sub_menu'>
+      <h3>결제방법</h3>
+      <ul>
+            <a href="15-충전출금페이지.html">
+                  <li>충전 하러 가기</li>
+
+            </a>
+            <a href="18-페이잔액페이지.html">
+                  <li>웨이팅미닛 페이</li>
+
+            </a>
+            
+      </ul>
+     </nav>
+     
+      <div id='main_contents'>
+            <h3>결제 방법</h3>
+
+		<p id="red">결제 방법 선택</p>
+
+            <br>
+
+            <div id="figure">
+                  <img src="결제.png" width="200px" height="200px">
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <form>
+                  <b id="center">
+                        <input type="radio" name="info"> 매장후불(예약 수수료 발생) <br>
+                      </b>
+                      <br>
+              
+                      <b id="center">
+                        <input type="radio" name="info"> 웨이팅미닛 선결제(적립금 1% 지급)
+                      </b>
+                      <br>
+            
+                    </form>
+            
+                    <form action="11 - 예약완료.html">
+
+                        <p id="one"> <br> 
+                              <input type="submit" value="예약">
+                    
+                            </p>
+
+                    </form>
+                      
+                
+		</ul>
+
+            </form>
+
+		<ul id="pink">
+         
+      </div>
+   
+  
+</section>
+
+<div class="clear"></div>
+
+<br>
+
+<footer>
+      <div id="footer_box"> 
+            <div id="footer_logo">
+                  <img src="배민.jpg" width="600px" height="100px">
+            </div>
+      
+            <div id="address">
+                  <ul>
+                    <li>주소: 천안시 동남구 안서동 각원사길 69 우: 31066</li>
+                    <li>TEL: 041-123-1234 Email: email@domain.com</li>
+                    <li>COPYRIGHT (C) waiting minute ALL RIGHTS RESERVED</li>
+            </ul>
+      
+            </div>
+
+      </div>
+
+</footer>
+</body>
+
+</html>

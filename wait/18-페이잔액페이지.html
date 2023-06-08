@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+/*  기본틀 만들기 */
+
+body {background-color: lavender;}
+
+* {padding: 0px; margin:0px;}
+header {
+      /* background-color: red; */
+height: 100px;
+width: 1140px;
+margin: 0 auto;}
+
+.red {margin: 30px 0px 20px 180px;
+                font-weight: bold;}
+
+a{margin: 30px 0px 20px 10px;
+        font-weight: bold;}                
+
+#main_img {
+       /* background-color: blue; */
+width: 100%;
+height: 250px;
+margin-left: 100px;
+margin-right: 200px;}
+
+#contents {background-color: green;
+width: 1140px;
+margin: 0 auto;
+margin-left: 300px;}
+
+#sub_menu {
+      /* background-color: pink; */
+width: 234px;
+float: left;}
+
+#main_contents{
+      /* background-color: orange; */
+width: 880px;
+float: right;}
+
+footer {background-color: #2c2a29;
+width: 100%;
+height: 150px;}
+
+.clear {clear: both;}
+
+/* header stylesheet */
+#logo {float: left;
+margin: 20px 0px 0px 20px;}
+
+#menus {float: right;}
+
+#main_menu li {
+      display: inline;
+      list-style-type: none;
+      margin-left: 80px;
+}
+
+#main_menu {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-right: 300px;
+      font-family: '맑은고딕';
+}
+
+#top_menu {
+      margin-top: 20px;
+      text-align: right;
+}
+
+
+
+/* main_img stylesheet */
+#main_img {
+      background-image: url(식당2.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+}
+
+/* contents stylesheet */
+#sub_menu {margin-top: 25px;}
+#sub_menu h3 {
+      font-size: 18px;
+      color: blue;
+      background-color: white;
+      padding: 10px;}
+
+#sub_menu li {
+      list-style-type: none;
+      border-bottom: solid 2px rebeccapurple;
+      padding: 10px;}
+
+#main_contents {margin-top: 25px;}
+
+#main_contents h3 {
+      font-size: 30px;
+      border-bottom: solid 2px black;
+      padding-bottom: 8px;}
+
+#main_contents p {
+            margin-top: 30px;
+            line-height: 180%;}
+
+#main_contents #figure {
+                  text-align: center;
+                  margin-top: 30px;}
+
+#main_contents li {list-style-type: none;
+                        padding: 5px;
+                  ;}
+
+
+/* footer stylesheet */
+
+#footer_logo {
+    float: left;
+      margin-top: 30px;
+      margin-left: 30px;
+}
+
+#footer_box {
+      margin: 0 auto;
+      width: 1300px;
+}
+
+#address {
+      float: right;
+      margin: 50px 30px 0px 0px;
+      color: white;
+}
+
+#address li {
+      list-style-type: none;
+}
+
+#red {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    font-family: '맑은고딕';
+}
+
+#cat {
+      font-size: 30px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+      color: black;
+}
+
+#blue {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    font-family: '맑은고딕';
+    text-align: center;
+
+}
+
+#pink {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#font {
+    margin: 0px 0px 0px 0px;
+      font-family: '맑은고딕';
+      text-align: center;
+}
+ 
+</style>
+</head>
+
+<body>
+
+<header>
+      <div id="logo">
+            <img src="웨이팅 미닛 로고.png" width="120" height="120"> 
+      </div>
+      <br>
+      <br>
+
+      <nav id="menus">
+            <div id="top_menu">
+                  로그인 ㅣ 회원가입 ㅣ 마이페이지 ㅣ 공지사항
+            </div>
+            <ul id="main_menu">
+                  <li>단국대</li>
+                  <li>호서대</li>
+                  <li>상명대</li>
+                  <li>백석대</li>
+            </ul>
+      </nav>
+
+</header>
+
+
+
+<section id='main_img'>
+</section>
+
+<section id='contents'>
+
+      <nav id='sub_menu'>
+            <h3>바로가기</h3>
+            <ul>
+                  <a href="홈.html">
+                        <li>홈</li>
+                  </a>
+                  
+                  <a href="15-충전출금페이지.html">
+                        <li>충전/출금하기</li>
+                  </a>
+                  
+                  <a href="22-계좌입력페이지.html">
+                        <li>내 계좌</li>
+                  </a>
+                  
+                  <a href="마이페이지.html">
+                        <li>마이페이지</li>
+                  </a>
+                  
+                  <li>----웨이팅 미닛----</li>
+            </ul>
+           </nav>
+   
+      <div id='main_contents'>
+
+            <form>
+                  
+                  <h2 class="font">웨이팅미닛 페이</h2> <br>
+                  <p class="font">
+                  ID : <input type="text"><br>
+                      적립금 : 3675  P</p><br>
+      
+                      <h4 class="font">보유금액 : 150000 </h4>
+                      <br>
+                      <p class="red">
+                     <a href="20-충전출금완료페이지.html">
+                      <input type="reset" value="충전"></a>
+
+                  <a href="20-충전출금완료페이지.html">
+                      <input type="reset" value="출금"></a></p>
+
+      <br>  *출금은 1,000원 단위로 가능, 충전은 5,000원 단위로 가능
+              </form>
+
+            <br>
+            <br>
+            <br>
+		<br>
+            <br>
+      </div>
+</section>
+
+<div class="clear"></div>
+
+<br>
+
+<footer>
+      <div id="footer_box"> 
+            <div id="footer_logo">
+                  <img src="배민.jpg" width="600px" height="100px">
+            </div>
+      
+            <div id="address">
+                  <ul>
+                    <li>주소: 천안시 동남구 안서동 각원사길 69 우: 31066</li>
+                    <li>TEL: 041-123-1234 Email: email@domain.com</li>
+                    <li>COPYRIGHT (C) waiting minute ALL RIGHTS RESERVED</li>
+            </ul>
+      
+            </div>
+
+      </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+/*  기본틀 만들기 */
+
+body {background-color: lavender;}
+
+* {padding: 0px; margin:0px;}
+
+header {
+      /* background-color: red; */
+height: 100px;
+width: 1140px;
+margin: 0 auto;}
+
+#main_img {
+       /* background-color: blue; */
+width: 100%;
+height: 250px;
+margin-left: 100px;
+margin-right: 200px;}
+
+#contents {background-color: green;
+width: 1140px;
+margin: 0 auto;
+margin-left: 300px;}
+
+#sub_menu {
+      /* background-color: pink; */
+width: 234px;
+float: left;}
+
+#main_contents{
+      /* background-color: orange; */
+width: 880px;
+float: right;}
+
+footer {background-color: #2c2a29;
+width: 100%;
+height: 150px;}
+
+.clear {clear: both;}
+
+/* header stylesheet */
+#logo {float: left;
+margin: 20px 0px 0px 20px;}
+
+#menus {float: right;}
+
+#main_menu li {
+      display: inline;
+      list-style-type: none;
+      margin-left: 80px;
+}
+
+#main_menu {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-right: 300px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#top_menu {
+      margin-top: 20px;
+      text-align: right;
+}
+
+
+
+/* main_img stylesheet */
+#main_img {
+      background-image: url(식당2.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+}
+
+/* contents stylesheet */
+#sub_menu {margin-top: 25px;}
+#sub_menu h3 {
+      font-size: 18px;
+      color: blue;
+      background-color: white;
+      padding: 10px;}
+
+#sub_menu li {
+      list-style-type: none;
+      border-bottom: solid 1px black;
+      padding: 10px;}
+
+#main_contents {margin-top: 25px;
+      margin: 50px 0px 0px 0px;}
+
+#main_contents h3 {
+      font-size: 30px;
+      border-bottom: solid 1px black;
+      padding-bottom: 8px;}
+
+#main_contents p {
+            margin-top: 30px;
+            line-height: 180%;}
+
+#main_contents #figure {
+                  float: left;
+                  clear: both; }
+
+#main_contents #dog {
+                  float: left;
+                  ;
+            margin: 10px;
+                   }
+
+#main_contents li {list-style-type: none;
+                        padding: 5px;}
+
+#main_photo {display: inline;
+float: right
+;}    
+
+
+/* 추가한 css */
+
+.restaurant {
+      /* border: solid 1px red; */
+      width: 250px;
+      margin-left: 10px;
+      float:left;
+}
+#area {
+      /* border: solid 1px green; */
+      margin-top: 10px;
+}
+
+
+
+
+
+/* footer stylesheet */
+
+#footer_logo {
+    float: left;
+      margin-top: 30px;
+      margin-left: 30px;
+}
+
+#footer_box {
+      margin: 0 auto;
+      width: 1300px;
+}
+
+#address {
+      float: right;
+      margin: 50px 30px 0px 0px;
+      color: white;
+}
+
+#address li {
+      list-style-type: none;
+}
+
+#red {
+    font-size: 20px;
+    color: purple;
+    font-weight: bold;
+    font-family: '굴림';
+}
+
+
+#pink {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ 
+</style>
+</head>
+
+<body>
+
+<header>
+      <div id="logo">
+            <img src="웨이팅 미닛 로고.png" width="120" height="120">
+      </div>
+      <br>
+      <br>
+
+      <nav id="menus">
+            <div id="top_menu">
+                  로그인 ㅣ 회원가입 ㅣ 공지사항
+            </div>
+            <form>
+                  <ul id="main_menu">
+                        <a href="8 - 단국대 대표 식당 소개.html">
+                              <li>단국대</li>
+                        </a>
+
+                        <a href="8 - 호서대 대표 식당 소개.html">
+                              <li>호서대</li>
+                        </a>
+
+                        <a href="8 - 상명대 대표 식당 소개.html">
+                              <li>상명대</li>
+                        </a>
+
+                        <a href="8 - 백석대 대표 식당 소개.html">
+                              <li>백석대</li>
+                        </a>
+                  </ul>
+
+            </form>
+     
+      </nav>
+
+</header>
+
+<br>
+<br>
+<br>
+<br>
+
+<section id='main_img'>
+</section>
+
+<section id='contents'>
+     <nav id='sub_menu'>
+      <a href="8 - 단국대 대표 식당 소개.html">
+            <li>단국대 대표 식당 소개</li>
+   
+         </a>
+         
+         <ul>
+            <a href="8 - 단국대 주변 술집 모아보기.html">
+                  <li>주변 식당 둘러보기</li>
+            </a>
+
+            <a href="8 - 단국대 주변 식당 모아보기.html">
+               <li>술집 둘러보기</li>
+            </a>
+               
+               <a href="8 - 단국대 주변 식당 가게 정보 맛고을촌.html">
+                     <li>가게 정보</li>
+               </a>
+               
+               <a href="8 - 단국대 맛고을촌 메뉴.html">
+                     <h3>메뉴</h3>
+               </a>
+               
+               <a href="8 - 단국대 맛고을촌 요청사항.html">
+                     <li>가게 요청 사항</li>
+               </a>
+   
+               <a href="8 - 단국대 맛고을촌 오시는 길.html">
+                     <li>오시는 길</li>
+               </a>
+         </ul>
+     </nav>
+     
+      <div id='main_contents'>
+            <h3>맛고을촌</h3>
+
+        
+                  <div id="area">
+                        <div class="restaurant">
+                              <p id="red">설렁탕 : 1.0</p>
+                                    <img src="설렁탕.jpg" width="200px" height="200px">
+                        </div>
+
+                   <div class="restaurant">
+                        <p id="red">갈비탕 : 1.0</p>
+                        <img src="갈비탕.jpg" width="200px" height="200px">
+                  </div>
+
+                  <div class="restaurant">
+                        <p id="red">육개장 : 1.0</p>
+                        <img src="육개장.jpg" width="200px" height="200px">
+                  </div>
+
+                  <div class="restaurant">
+                        <p id="red">우렁된장 : 0.9</p>
+                        <img src="우렁된장.jfif" width="200px" height="200px">
+                  </div>
+
+                  <div class="restaurant">
+                        <p id="red">순두부 : 0.9</p>
+                        <img src="순두부.webp" width="200px" height="200px">
+                  </div>
+
+                  <div class="restaurant">
+                        <p id="red">청국장 : 1.0</p>
+                        <img src="청국장.jpg" width="200px" height="200px">
+                  </div>
+
+                  <div class="restaurant">
+                        <p id="red">곱창전골 : 4.5</p>
+                        <img src="곱창전골.jpeg" width="200px" height="200px">
+                  </div>
+
+                  <div class="restaurant">
+                        <p id="red">부대전골 : 4.5</p>
+                        <img src="부대찌개.jfif" width="200px" height="200px">
+                  </div>
+
+                  <div class="restaurant">
+                        <p id="red">버섯 불고기 : 1.5</p>
+                        <img src="버섯불고기.jpg" width="200px" height="200px">
+                  </div>
+
+            </div>
+      
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+      
+
+	
+
+	
+      </div>
+   
+  
+</section>
+
+<div class="clear"></div>
+
+<br>
+
+<footer>
+      <div id="footer_box"> 
+            <div id="footer_logo">
+                  <img src="배민.jpg" width="600px" height="100px">
+            </div>
+      
+            <div id="address">
+                  <ul>
+                    <li>주소: 천안시 동남구 안서동 각원사길 69 우: 31066</li>
+                    <li>TEL: 041-123-1234 Email: email@domain.com</li>
+                    <li>COPYRIGHT (C) waiting minute ALL RIGHTS RESERVED</li>
+            </ul>
+      
+            </div>
+
+      </div>
+
+</footer>
+</body>
+
+</html>

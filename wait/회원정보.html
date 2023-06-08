@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+/*  기본틀 만들기 */
+
+body {background-color: lavender;}
+
+* {padding: 0px; margin:0px;}
+header {
+      /* background-color: red; */
+height: 100px;
+width: 1140px;
+margin: 0 auto;
+}
+
+.red {margin: 30px 0px 20px 320px;
+                font-weight: bold;}
+
+a{margin: 30px 0px 20px 120px;
+                font-weight: bold;}                
+
+#main_img {
+       /* background-color: blue; */
+width: 100%;
+height: 250px;
+margin-left: 100px;
+margin-right: 200px;}
+
+#contents {background-color: green;
+width: 1140px;
+margin: 0 auto;
+margin-left: 300px;}
+
+#sub_menu {
+      /* background-color: pink; */
+width: 234px;
+float: left;}
+
+#main_contents{
+      /* background-color: orange; */
+width: 880px;
+float: right;}
+
+footer {background-color: #2c2a29;
+width: 100%;
+height: 150px;}
+
+.clear {clear: both;}
+
+/* header stylesheet */
+#logo {float: left;
+margin: 20px 0px 0px 20px;}
+
+#menus {float: right;}
+
+#main_menu li {
+      display: inline;
+      list-style-type: none;
+      margin-left: 80px;
+}
+
+#main_menu {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-right: 300px;
+      font-family: '맑은고딕';
+}
+
+#top_menu {
+      margin-top: 20px;
+      text-align: right;
+}
+
+
+
+/* main_img stylesheet */
+
+/* contents stylesheet */
+#sub_menu {margin-top: 25px;}
+#sub_menu h3 {
+      font-size: 18px;
+      color: blue;
+      background-color: white;
+      padding: 10px;}
+
+#sub_menu li {
+      list-style-type: none;
+      border-bottom: solid 2px rebeccapurple;
+      padding: 10px;}
+
+#main_contents {margin-top: 25px;}
+
+#main_contents h3 {
+      font-size: 30px;
+      border-bottom: solid 2px black;
+      padding-bottom: 8px;}
+
+#main_contents p {
+            margin-top: 30px;
+            line-height: 180%;}
+
+#main_contents #figure {
+                  text-align: center;
+                  margin:70px 30px 30px 120px;}
+
+#main_contents li {list-style-type: none;
+                        padding: 5px;
+                  ;}
+
+
+/* footer stylesheet */
+
+#footer_logo {
+    float: left;
+      margin-top: 30px;
+      margin-left: 30px;
+}
+
+#footer_box {
+      margin: 0 auto;
+      width: 1300px;
+}
+
+#address {
+      float: right;
+      margin: 50px 30px 0px 0px;
+      color: white;
+}
+
+#address li {
+      list-style-type: none;
+}
+
+#red {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    font-family: '맑은고딕';
+}
+
+#cat {
+      font-size: 30px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+      color: black;
+}
+
+#blue {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    font-family: '맑은고딕';
+    text-align: center;
+
+}
+
+#pink {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#font {
+    margin: 0px 0px 0px 0px;
+      font-family: '맑은고딕';
+      text-align: center;
+}
+
+.class {text-align: center;}
+ 
+</style>
+</head>
+
+<body>
+
+<header>
+      <div id="logo">
+            <img src="img/웨이팅 미닛 로고.png" width="120" height="120"> <h4>웨이팅 미닛</h4>      </div>
+      <br>
+      <br>
+
+      <nav id="menus">
+            <div id="top_menu">
+                  호서대 님 ㅣ 마이페이지 ㅣ 공지사항
+            </div>
+            <ul id="main_menu">
+                  <li>단국대</li>
+                  <li>호서대</li>
+                  <li>상명대</li>
+                  <li>백석대</li>
+            </ul>
+            <br>
+            <hr>
+      </nav>
+
+</header>
+
+
+
+
+
+<section id='contents'>
+    <nav id='sub_menu'>
+     <h3>최근 방문 목록</h3>
+     <ul>
+       <li>적립금 확인하기</li> 
+       <li>비밀번호 변경하기</li> 
+       <li>생년월일 확인 및 본인인증</li> 
+       <li>계좌번호 인증 및 변경</li>
+     </ul>
+    </nav>
+  
+     <div id='main_contents'>
+           <h3>마이페이지</h3>
+
+       <p> 
+         
+           <div id="figure">
+                 <img src="img/프로필.png" width="80px" height="80px">
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                 <b>호서대</b>님, 환영합니다!
+           </div>
+           <br> 
+      <p class="class">
+        ID : Hoseo-PPCC <br> <br>
+        PW : <input type="password"> 
+        <input type="submit" value="비밀번호변경"> <br> <br>
+        HP : 010-0000-0000 <br> <br>
+        생년월일: 2003.03.28 <br> <br>
+        계좌 : 농협 356-5416-****-13 <br><br>
+      </p>
+       <ul>
+          
+       </ul>
+     </div>
+</section>
+<div class="clear"></div>
+
+<br>
+
+<footer>
+      <div id="footer_box"> 
+            <div id="footer_logo">
+                  <img src="img/footer.jpg" width="600px" height="100px">
+            </div>
+      
+            <div id="address">
+                  <ul>
+                    <li>주소: 천안시 동남구 안서동 각원사길 69 우: 31066</li>
+                    <li>TEL: 041-123-1234 Email: email@domain.com</li>
+                    <li>COPYRIGHT (C) waiting minute ALL RIGHTS RESERVED</li>
+            </ul>
+      
+            </div>
+
+      </div>
+
+</footer>
+</body>
+
+</html>
